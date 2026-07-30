@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>Student studying Mathematics and Computer Science at Columbia University</strong>
+  <samp>Student studying Mathematics and Computer Science at Columbia University</samp>
 </p>
 
 <p align="center">
@@ -12,5 +12,5 @@
 </p>
 
 <p align="center">
-  <img src="./assets/profile-stats/activity.svg" alt="Recent coding activity in a monochrome graph" width="99%" />
+  <img src="./assets/profile-stats/activity.svg" alt="Monthly commits in a monochrome line and dot graph" width="99%" />
 </p>
