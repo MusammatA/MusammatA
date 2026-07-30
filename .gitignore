@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.pyo
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local-only generated copies not used by the profile README.
+assets/profile/
+
+# Local design experiments and scratch exports.
+liquid-logo/
+metallic-portrait-site/
+statue-profile-final.png
+statue-profile-sequence-once.gif

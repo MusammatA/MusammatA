@@ -8,9 +8,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -20,6 +25,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Verify Python syntax
+        run: PYTHONPYCACHEPREFIX=/tmp/codex-pyc python -m py_compile scripts/generate_profile_stats.py generate_typographic_portrait.py
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
       - name: Generate monochrome profile cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,6 +39,7 @@ jobs:
 
       - name: Commit refreshed cards
         run: |
+          set -euo pipefail
           if git diff --quiet -- assets/profile-stats; then
             echo "No profile stat changes."
             exit 0
