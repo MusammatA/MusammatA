@@ -24,7 +24,9 @@ FONT_PATH = Path("/System/Library/Fonts/SFNSMono.ttf")
 LATIN_LABEL_FONT_PATH = Path("/System/Library/Fonts/Helvetica.ttc")
 BANGLA_LABEL_FONT_PATH = Path("/System/Library/Fonts/KohinoorBangla.ttc")
 LEFT_LABELS = ["E", "I", "T", "Y"]
-RIGHT_LABELS = ["ই", "তি"]
+# Pillow in this environment lacks Bengali shaping, so the bottom cluster is
+# stored in visual order to render as the intended "তি".
+RIGHT_LABELS = ["ই", "িত"]
 
 
 def add_background(draw: ImageDraw.ImageDraw, width: int, height: int) -> None:
