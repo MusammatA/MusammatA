@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./typographic-portrait-typing.gif" alt="High-contrast black-and-white typographic portrait forming from left to right with real letters, numbers, and symbols" width="900" />
+  <img src="./typographic-portrait-typing.gif" alt="High-contrast black-and-white typographic portrait typing in from left to right, then revealing vertical EITY and ইতি side labels" width="900" />
 </p>
 
 <table>

@@ -21,6 +21,10 @@ GIF_OUTPUTS = [
     ROOT / "assets/profile/typographic-portrait-typing.gif",
 ]
 FONT_PATH = Path("/System/Library/Fonts/SFNSMono.ttf")
+LATIN_LABEL_FONT_PATH = Path("/System/Library/Fonts/Helvetica.ttc")
+BANGLA_LABEL_FONT_PATH = Path("/System/Library/Fonts/KohinoorBangla.ttc")
+LEFT_LABELS = ["E", "I", "T", "Y"]
+RIGHT_LABELS = ["ই", "তি"]
 
 
 def add_background(draw: ImageDraw.ImageDraw, width: int, height: int) -> None:
@@ -49,6 +53,68 @@ def draw_cursor(
 
 def as_gif_frame(frame: Image.Image) -> Image.Image:
     return frame.quantize(colors=16, method=Image.Quantize.MEDIANCUT)
+
+
+def draw_side_labels(
+    image: Image.Image,
+    left_count: int,
+    right_count: int,
+) -> Image.Image:
+    labeled = image.copy()
+    draw = ImageDraw.Draw(labeled)
+    width, height = labeled.size
+
+    font_size = max(92, round(height / 5.85))
+    latin_font = ImageFont.truetype(str(LATIN_LABEL_FONT_PATH), font_size)
+    bangla_font = ImageFont.truetype(str(BANGLA_LABEL_FONT_PATH), font_size)
+    stroke_width = max(3, font_size // 30)
+    fill = (242, 242, 242)
+    stroke_fill = (0, 0, 0)
+
+    def draw_stack(
+        labels: list[str],
+        font: ImageFont.FreeTypeFont,
+        reveal_count: int,
+        side: str,
+    ) -> None:
+        if reveal_count <= 0:
+            return
+
+        visible_labels = labels[:reveal_count]
+        if len(labels) == 4:
+            centers = np.array([0.095, 0.355, 0.655, 0.93]) * height
+        elif len(labels) == 2:
+            centers = np.array([0.12, 0.82]) * height
+        else:
+            top_margin = round(height * 0.09)
+            bottom_margin = round(height * 0.09)
+            centers = np.linspace(top_margin, height - bottom_margin, len(labels))
+
+        gutter_x = round(width * 0.07) if side == "left" else round(width * 0.90)
+
+        for idx, label in enumerate(visible_labels):
+            bbox = draw.textbbox(
+                (0, 0),
+                label,
+                font=font,
+                stroke_width=stroke_width,
+            )
+            glyph_w = bbox[2] - bbox[0]
+            glyph_h = bbox[3] - bbox[1]
+            x = round(gutter_x - glyph_w / 2 - bbox[0])
+            y = round(centers[idx] - glyph_h / 2 - bbox[1])
+            draw.text(
+                (x, y),
+                label,
+                font=font,
+                fill=fill,
+                stroke_width=stroke_width,
+                stroke_fill=stroke_fill,
+            )
+
+    draw_stack(LEFT_LABELS, latin_font, left_count, "left")
+    draw_stack(RIGHT_LABELS, bangla_font, right_count, "right")
+    return labeled
 
 
 def render() -> None:
@@ -125,15 +191,22 @@ def render() -> None:
             baseline_y = top - 2
             draw.text((left, baseline_y), char, font=font, fill="black")
 
+    labeled_out = draw_side_labels(out, len(LEFT_LABELS), len(RIGHT_LABELS))
+
     for output in OUTPUTS:
         output.parent.mkdir(parents=True, exist_ok=True)
-        out.save(output)
+        labeled_out.save(output)
 
     gif_width = 900
     gif_height = round(height * gif_width / width)
-    final_small = out.resize((gif_width, gif_height), Image.Resampling.NEAREST)
+    portrait_small = out.resize((gif_width, gif_height), Image.Resampling.NEAREST)
+    final_small = draw_side_labels(
+        portrait_small,
+        len(LEFT_LABELS),
+        len(RIGHT_LABELS),
+    )
 
-    bg_small = Image.new("RGB", final_small.size, "white")
+    bg_small = Image.new("RGB", portrait_small.size, "white")
     bg_draw = ImageDraw.Draw(bg_small)
     add_background(bg_draw, *final_small.size)
 
@@ -156,13 +229,13 @@ def render() -> None:
         frame = bg_small.copy()
         if row > 0:
             revealed_h = min(gif_height, row * scaled_cell_h)
-            region = final_small.crop((0, 0, gif_width, revealed_h))
+            region = portrait_small.crop((0, 0, gif_width, revealed_h))
             frame.paste(region, (0, 0))
         if revealed_cols > 0 and row < rows:
             top = row * scaled_cell_h
             bottom = min(gif_height, top + scaled_cell_h)
             revealed_w = min(gif_width, revealed_cols * scaled_cell_w)
-            region = final_small.crop((0, top, revealed_w, bottom))
+            region = portrait_small.crop((0, top, revealed_w, bottom))
             frame.paste(region, (0, top))
         return frame
 
@@ -189,8 +262,21 @@ def render() -> None:
             frames.append(as_gif_frame(next_line_frame))
             durations.append(120)
 
+    reveal_sequence = [
+        (1, 0),
+        (1, 1),
+        (2, 1),
+        (3, 1),
+        (4, 1),
+        (4, 2),
+    ]
+    for left_count, right_count in reveal_sequence:
+        label_frame = draw_side_labels(portrait_small, left_count, right_count)
+        frames.append(as_gif_frame(label_frame))
+        durations.append(150)
+
     frames.append(as_gif_frame(final_small))
-    durations.append(2600)
+    durations.append(2800)
 
     for output in GIF_OUTPUTS:
         output.parent.mkdir(parents=True, exist_ok=True)
