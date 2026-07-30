@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" viewBox="0 0 860 360" role="img" aria-labelledby="title desc">
+  <title>Recent coding activity</title>
+  <desc>Recent public push activity by hour | America/Detroit (UTC -4)</desc>
+  <rect x="1" y="1" width="858" height="358" rx="28" fill="#050505" stroke="#232323" stroke-width="2"/>
+  <text x="36" y="58" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700">Recent coding activity</text>
+  <text x="36" y="88" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">Recent public push activity by hour | America/Detroit (UTC -4)</text>
+  <line x1="52" y1="284" x2="812" y2="284" stroke="#242424" stroke-width="1"/>
+  <text x="40" y="289" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">0</text>
+  <line x1="52" y1="239" x2="812" y2="239" stroke="#242424" stroke-width="1"/>
+  <text x="40" y="244" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">2</text>
+  <line x1="52" y1="194" x2="812" y2="194" stroke="#242424" stroke-width="1"/>
+  <text x="40" y="199" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">5</text>
+  <line x1="52" y1="149" x2="812" y2="149" stroke="#242424" stroke-width="1"/>
+  <text x="40" y="154" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">8</text>
+  <line x1="52" y1="104" x2="812" y2="104" stroke="#242424" stroke-width="1"/>
+  <text x="40" y="109" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">10</text>
+  <rect x="52.00" y="232" width="25.92" height="52" rx="6" fill="#9A9A9A"/>
+  <text x="64.96" y="310" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">0</text>
+  <rect x="83.92" y="112" width="25.92" height="172" rx="6" fill="#9A9A9A"/>
+  <rect x="115.83" y="181" width="25.92" height="103" rx="6" fill="#9A9A9A"/>
+  <rect x="147.75" y="181" width="25.92" height="103" rx="6" fill="#9A9A9A"/>
+  <rect x="179.67" y="250" width="25.92" height="34" rx="6" fill="#9A9A9A"/>
+  <rect x="211.58" y="267" width="25.92" height="17" rx="6" fill="#9A9A9A"/>
+  <rect x="243.50" y="232" width="25.92" height="52" rx="6" fill="#9A9A9A"/>
+  <text x="256.46" y="310" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">6</text>
+  <rect x="275.42" y="250" width="25.92" height="34" rx="6" fill="#9A9A9A"/>
+  <rect x="307.33" y="250" width="25.92" height="34" rx="6" fill="#F7F7F7"/>
+  <rect x="339.25" y="284" width="25.92" height="0" rx="6" fill="#F7F7F7"/>
+  <rect x="371.17" y="284" width="25.92" height="0" rx="6" fill="#F7F7F7"/>
+  <rect x="403.08" y="284" width="25.92" height="0" rx="6" fill="#F7F7F7"/>
+  <rect x="435.00" y="284" width="25.92" height="0" rx="6" fill="#F7F7F7"/>
+  <text x="447.96" y="310" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">12</text>
+  <rect x="466.92" y="250" width="25.92" height="34" rx="6" fill="#F7F7F7"/>
+  <rect x="498.83" y="250" width="25.92" height="34" rx="6" fill="#F7F7F7"/>
+  <rect x="530.75" y="267" width="25.92" height="17" rx="6" fill="#F7F7F7"/>
+  <rect x="562.67" y="198" width="25.92" height="86" rx="6" fill="#F7F7F7"/>
+  <rect x="594.58" y="267" width="25.92" height="17" rx="6" fill="#F7F7F7"/>
+  <rect x="626.50" y="284" width="25.92" height="0" rx="6" fill="#F7F7F7"/>
+  <text x="639.46" y="310" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">18</text>
+  <rect x="658.42" y="250" width="25.92" height="34" rx="6" fill="#F7F7F7"/>
+  <rect x="690.33" y="232" width="25.92" height="52" rx="6" fill="#F7F7F7"/>
+  <rect x="722.25" y="267" width="25.92" height="17" rx="6" fill="#F7F7F7"/>
+  <rect x="754.17" y="267" width="25.92" height="17" rx="6" fill="#F7F7F7"/>
+  <rect x="786.08" y="198" width="25.92" height="86" rx="6" fill="#9A9A9A"/>
+  <text x="799.04" y="310" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">23</text>
+  <line x1="52" y1="284" x2="812" y2="284" stroke="#8E8E8E" stroke-width="1.5"/>
+  <text x="36" y="332" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">Derived from the latest 58 public push events</text>
+</svg>

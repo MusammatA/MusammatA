@@ -7,11 +7,10 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MusammatA&show_icons=true&hide_border=true&bg_color=00000000&title_color=CFCFCF&text_color=F3F3F3&icon_color=AEDBFF&rank_icon=github" alt="GitHub contribution metrics" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MusammatA&layout=compact&hide_border=true&bg_color=00000000&title_color=CFCFCF&text_color=F3F3F3&langs_count=8" alt="GitHub language distribution" width="49%" />
+  <img src="./assets/profile-stats/overview.svg" alt="Overall contribution metrics in a monochrome card" width="49%" />
+  <img src="./assets/profile-stats/languages.svg" alt="Language distribution in a monochrome graph" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=MusammatA&theme=transparent&hide_border=true&ring=CFCFCF&fire=CFCFCF&currStreakLabel=F3F3F3&sideLabels=BDBDBD&currStreakNum=FFFFFF&sideNums=F3F3F3&dates=7F7F7F" alt="GitHub streak stats" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MusammatA&theme=github&utcOffset=-4" alt="Recent coding activity by time of day" width="49%" />
+  <img src="./assets/profile-stats/activity.svg" alt="Recent coding activity in a monochrome graph" width="99%" />
 </p>
