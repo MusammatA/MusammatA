@@ -5,7 +5,7 @@
   <text x="36" y="60" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="24" font-weight="700">Language distribution</text>
   <text x="36" y="98" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">HTML</text>
   <rect x="36" y="108" width="520" height="16" rx="9" fill="#111111" stroke="#242424"/>
-  <rect x="36" y="108" width="484" height="16" rx="9" fill="#F7F7F7"/>
+  <rect x="36" y="108" width="483" height="16" rx="9" fill="#F7F7F7"/>
   <text x="574" y="121" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">93.0%</text>
   <text x="36" y="140" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">TypeScript</text>
   <rect x="36" y="150" width="520" height="16" rx="9" fill="#111111" stroke="#242424"/>
