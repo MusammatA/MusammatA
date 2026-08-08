@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="./typographic-portrait-typing.gif" alt="High-contrast black-and-white typographic portrait typing in from left to right, then revealing vertical EITY and ইতি side labels" width="900" />
-</p>
-
-<p align="center">
   <samp>Student studying Mathematics and Computer Science at Columbia University</samp>
 </p>
 
