@@ -13,7 +13,7 @@
   <text x="54" y="163" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">62</text>
   <line x1="68" y1="114" x2="804" y2="114" stroke="#242424" stroke-width="1"/>
   <text x="54" y="119" fill="#8E8E8E" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">82</text>
-  <polyline points="68.00,290.00 134.91,290.00 201.82,290.00 268.73,290.00 335.64,290.00 402.55,263.68 469.45,124.00 536.36,192.83 603.27,277.85 670.18,290.00 737.09,186.76 804.00,269.76" fill="none" stroke="#F7F7F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="68.00,290.00 134.91,290.00 201.82,290.00 268.73,290.00 335.64,290.00 402.55,263.68 469.45,124.00 536.36,192.83 603.27,277.85 670.18,290.00 737.09,186.76 804.00,267.73" fill="none" stroke="#F7F7F7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="68.00" cy="290.00" r="4.5" fill="#CFCFCF" stroke="#050505" stroke-width="2"/>
   <text x="68.00" y="318" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">Sep</text>
   <circle cx="134.91" cy="290.00" r="4.5" fill="#CFCFCF" stroke="#050505" stroke-width="2"/>
@@ -36,7 +36,7 @@
   <text x="670.18" y="318" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">Jun</text>
   <circle cx="737.09" cy="186.76" r="4.5" fill="#CFCFCF" stroke="#050505" stroke-width="2"/>
   <text x="737.09" y="318" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">Jul</text>
-  <circle cx="804.00" cy="269.76" r="5.5" fill="#F7F7F7" stroke="#050505" stroke-width="2"/>
+  <circle cx="804.00" cy="267.73" r="5.5" fill="#F7F7F7" stroke="#050505" stroke-width="2"/>
   <text x="804.00" y="318" text-anchor="middle" fill="#8E8E8E" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="12">Aug</text>
   <line x1="68" y1="290" x2="804" y2="290" stroke="#8E8E8E" stroke-width="1.5"/>
 </svg>
