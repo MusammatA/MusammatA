@@ -5,7 +5,7 @@
   <text x="36" y="60" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="24" font-weight="700">Overall contribution metrics</text>
   <rect x="36" y="96" width="214" height="88" rx="18" fill="#0D0D0D" stroke="#242424"/>
   <text x="54" y="130" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">Public repos</text>
-  <text x="54" y="164" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="34" font-weight="700">10</text>
+  <text x="54" y="164" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="34" font-weight="700">11</text>
   <rect x="272" y="96" width="214" height="88" rx="18" fill="#0D0D0D" stroke="#242424"/>
   <text x="290" y="130" fill="#B8B8B8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="13">Followers</text>
   <text x="290" y="164" fill="#F7F7F7" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="34" font-weight="700">2</text>
